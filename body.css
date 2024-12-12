@@ -1,0 +1,159 @@
+body{
+    background-image: url(slike/slike/pozadina5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1,h2{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+#navbar ul{
+    text-align: center;
+    list-style: none;
+}
+#navbar ul li{
+    padding: 10px;
+    border:5px dashed purple;
+    border-radius: 10px;
+    display: inline-block;
+}
+#navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+#navbar ul li:hover{
+    background-color: blue;
+}
+#navbar ul li:active{
+    background-color: chocolate;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: purple;
+}
+form{
+    width: 60%;
+    text-align: left;
+}
+form input{
+    padding: 15px 10px;
+    border:5px solid coral;
+    margin: 5px 0px;
+}
+form button{
+    background-color: chartreuse;
+    border-radius: 15px;
+    width: 70px;
+    height: 40px;
+}
+button:hover{
+    background-color: crimson;
+    border-color: darkkhaki;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+input{
+    text-decoration: wavy;
+    text-transform: none;
+    font-weight: bold;
+}
+table{
+    display: flex;
+    border: 1px solid pink;
+    margin:0px 10px;
+}
+tr:nth-child(odd){
+    background-color: limegreen;
+    color: black;
+}
+tr:nth-child(even){
+    background-color: lightcyan;
+    color: black;
+}
+table td{
+    text-align: center;
+}
+p{
+    text-align: left;
+}
+img{
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.slika1:hover{
+    border-color: orange;
+}
+.tabla1{
+    width: 28%;
+}
+.tabla2{
+    width: 28.8%;
+}
+#tabla3{
+    width: 18%;
+}
+#tabla4{
+    width: 27%;
+}
+#slika23{
+    animation-name: projekat;
+    animation-duration: 3s;
+    width:400px;
+    height:250px;
+    position: relative;
+    animation-delay: 4s;
+    border-radius: 15px;
+}
+#slika3 {
+    animation-name: projekat;
+    animation-duration: 3s;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    animation-delay: 4s;
+    border-radius: 15px;
+    border: 3px solid black; 
+}
+@keyframes projekat {
+    0% {
+        left: 0;
+        border-color: black; 
+    }
+    50% {
+        left: 200px; 
+        border-color: black; 
+    }
+    100% {
+        left: 400px; 
+        border-color: black; /
+    }
+}
+@media screen and (max-width: 480px) {
+
+    form {
+        width: 90%; /* Forme zauzimaju veću širinu na mobilnim uređajima */
+    }
+
+    #navbar ul li {
+        font-size: 14px; /* Manji font u navigaciji */
+        padding: 12px;
+        display: block;
+    }
+
+    table {
+        font-size: 12px; /* Smanjite font u tabelama */
+    }
+
+    #slika23, #slika3 {
+        width: 100%; /* Slika zauzima punu širinu ekrana */
+        height: auto;
+    }
+
+    p{
+        font-size: 12px; /* Manji font za paragrafe */
+    }
+}
